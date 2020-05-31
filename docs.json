@@ -1,0 +1,326 @@
+[
+  {
+    "Constant" : [
+
+    ],
+    "submodules" : [
+
+    ],
+    "Function" : [
+
+    ],
+    "Variable" : [
+      {
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "Model number of your XP-Pen tablet",
+          "More information can be found here: https:\/\/github.com\/dimaj\/XPPenTablet.spoon\/wiki\/How-to-get-device-name"
+        ],
+        "name" : "deviceName",
+        "doc" : "Model number of your XP-Pen tablet\nMore information can be found here: https:\/\/github.com\/dimaj\/XPPenTablet.spoon\/wiki\/How-to-get-device-name",
+        "notes" : [
+
+        ],
+        "signature" : "XPPenTablet.deviceName",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "def" : "XPPenTablet.deviceName",
+        "desc" : "Model number of your XP-Pen tablet"
+      },
+      {
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "Location where XP-Pen software keeps its configuration."
+        ],
+        "name" : "configLocation",
+        "doc" : "Location where XP-Pen software keeps its configuration.",
+        "notes" : [
+
+        ],
+        "signature" : "XPPenTablet.configLocation",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "def" : "XPPenTablet.configLocation",
+        "desc" : "Location where XP-Pen software keeps its configuration."
+      },
+      {
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon."
+        ],
+        "name" : "logger",
+        "doc" : "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.",
+        "notes" : [
+
+        ],
+        "signature" : "XPPenTablet.logger",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "def" : "XPPenTablet.logger",
+        "desc" : "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon."
+      }
+    ],
+    "stripped_doc" : [
+
+    ],
+    "Deprecated" : [
+
+    ],
+    "type" : "Module",
+    "desc" : "Configure 'Monitor Mapping' settings for XP-Pen tablets without opening settings application",
+    "Constructor" : [
+
+    ],
+    "Field" : [
+
+    ],
+    "Method" : [
+      {
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "Makes sure that all fields have been initialized and reads in configuration file"
+        ],
+        "name" : "start",
+        "doc" : "Makes sure that all fields have been initialized and reads in configuration file",
+        "notes" : [
+
+        ],
+        "signature" : "XPPenTablet:start()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "def" : "XPPenTablet:start()",
+        "desc" : "Makes sure that all fields have been initialized and reads in configuration file"
+      },
+      {
+        "parameters" : [
+          " * mapping - A table containing hotkey objifier\/key details for the following items:",
+          "  * current_window - gets frame of currently active window and saves it to XP-Pen's config"
+        ],
+        "stripped_doc" : [
+          "Binds hotkeys for XPPenTablet",
+          ""
+        ],
+        "name" : "bindHotkeys",
+        "doc" : "Binds hotkeys for XPPenTablet\n\nParameters:\n * mapping - A table containing hotkey objifier\/key details for the following items:\n  * current_window - gets frame of currently active window and saves it to XP-Pen's config",
+        "notes" : [
+
+        ],
+        "signature" : "XPPenTablet:bindHotkeys(mapping)",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "def" : "XPPenTablet:bindHotkeys(mapping)",
+        "desc" : "Binds hotkeys for XPPenTablet"
+      },
+      {
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "Saves X, Y, W, H of currenlty active window into XP-Pen's settings file and restarts XP-Pen driver"
+        ],
+        "name" : "updateForActiveWindow",
+        "doc" : "Saves X, Y, W, H of currenlty active window into XP-Pen's settings file and restarts XP-Pen driver",
+        "notes" : [
+
+        ],
+        "signature" : "XPPenTablet:updateForActiveWindow()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "def" : "XPPenTablet:updateForActiveWindow()",
+        "desc" : "Saves X, Y, W, H of currenlty active window into XP-Pen's settings file and restarts XP-Pen driver"
+      },
+      {
+        "parameters" : [
+          " * appName - Name of the application to get coordinates for"
+        ],
+        "stripped_doc" : [
+          "Saves X, Y, W, H of sepcified application's main window into XP-Pen's settings file and restarts XP-Pen driver",
+          ""
+        ],
+        "name" : "updateConfigForApp",
+        "doc" : "Saves X, Y, W, H of sepcified application's main window into XP-Pen's settings file and restarts XP-Pen driver\n\nParameters:\n * appName - Name of the application to get coordinates for",
+        "notes" : [
+
+        ],
+        "signature" : "XPPenTablet:updateConfigForApp()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "def" : "XPPenTablet:updateConfigForApp()",
+        "desc" : "Saves X, Y, W, H of sepcified application's main window into XP-Pen's settings file and restarts XP-Pen driver"
+      }
+    ],
+    "Command" : [
+
+    ],
+    "items" : [
+      {
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "Location where XP-Pen software keeps its configuration."
+        ],
+        "name" : "configLocation",
+        "doc" : "Location where XP-Pen software keeps its configuration.",
+        "notes" : [
+
+        ],
+        "signature" : "XPPenTablet.configLocation",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "def" : "XPPenTablet.configLocation",
+        "desc" : "Location where XP-Pen software keeps its configuration."
+      },
+      {
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "Model number of your XP-Pen tablet",
+          "More information can be found here: https:\/\/github.com\/dimaj\/XPPenTablet.spoon\/wiki\/How-to-get-device-name"
+        ],
+        "name" : "deviceName",
+        "doc" : "Model number of your XP-Pen tablet\nMore information can be found here: https:\/\/github.com\/dimaj\/XPPenTablet.spoon\/wiki\/How-to-get-device-name",
+        "notes" : [
+
+        ],
+        "signature" : "XPPenTablet.deviceName",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "def" : "XPPenTablet.deviceName",
+        "desc" : "Model number of your XP-Pen tablet"
+      },
+      {
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon."
+        ],
+        "name" : "logger",
+        "doc" : "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.",
+        "notes" : [
+
+        ],
+        "signature" : "XPPenTablet.logger",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "def" : "XPPenTablet.logger",
+        "desc" : "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon."
+      },
+      {
+        "parameters" : [
+          " * mapping - A table containing hotkey objifier\/key details for the following items:",
+          "  * current_window - gets frame of currently active window and saves it to XP-Pen's config"
+        ],
+        "stripped_doc" : [
+          "Binds hotkeys for XPPenTablet",
+          ""
+        ],
+        "name" : "bindHotkeys",
+        "doc" : "Binds hotkeys for XPPenTablet\n\nParameters:\n * mapping - A table containing hotkey objifier\/key details for the following items:\n  * current_window - gets frame of currently active window and saves it to XP-Pen's config",
+        "notes" : [
+
+        ],
+        "signature" : "XPPenTablet:bindHotkeys(mapping)",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "def" : "XPPenTablet:bindHotkeys(mapping)",
+        "desc" : "Binds hotkeys for XPPenTablet"
+      },
+      {
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "Makes sure that all fields have been initialized and reads in configuration file"
+        ],
+        "name" : "start",
+        "doc" : "Makes sure that all fields have been initialized and reads in configuration file",
+        "notes" : [
+
+        ],
+        "signature" : "XPPenTablet:start()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "def" : "XPPenTablet:start()",
+        "desc" : "Makes sure that all fields have been initialized and reads in configuration file"
+      },
+      {
+        "parameters" : [
+          " * appName - Name of the application to get coordinates for"
+        ],
+        "stripped_doc" : [
+          "Saves X, Y, W, H of sepcified application's main window into XP-Pen's settings file and restarts XP-Pen driver",
+          ""
+        ],
+        "name" : "updateConfigForApp",
+        "doc" : "Saves X, Y, W, H of sepcified application's main window into XP-Pen's settings file and restarts XP-Pen driver\n\nParameters:\n * appName - Name of the application to get coordinates for",
+        "notes" : [
+
+        ],
+        "signature" : "XPPenTablet:updateConfigForApp()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "def" : "XPPenTablet:updateConfigForApp()",
+        "desc" : "Saves X, Y, W, H of sepcified application's main window into XP-Pen's settings file and restarts XP-Pen driver"
+      },
+      {
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "Saves X, Y, W, H of currenlty active window into XP-Pen's settings file and restarts XP-Pen driver"
+        ],
+        "name" : "updateForActiveWindow",
+        "doc" : "Saves X, Y, W, H of currenlty active window into XP-Pen's settings file and restarts XP-Pen driver",
+        "notes" : [
+
+        ],
+        "signature" : "XPPenTablet:updateForActiveWindow()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "def" : "XPPenTablet:updateForActiveWindow()",
+        "desc" : "Saves X, Y, W, H of currenlty active window into XP-Pen's settings file and restarts XP-Pen driver"
+      }
+    ],
+    "doc" : "Configure 'Monitor Mapping' settings for XP-Pen tablets without opening settings application\n\nUse Case: You have multiple windows, where you want to draw\/write on, but you want your tablet to\n          work only one of those windows. Instead of opening up the PenTabletSettings application\n          and manually changing all the values, this spoon is going to configure mapping area\n          based on currently active window or based on a window with a given name (e.g. 'Skitch')\n\nSample configuration:\n```\nspoon.SpoonInstall:andUse(\"XPPenTablet\", {\n    config = {\n        deviceName = \"DEV_6298_3936\",\n        configLocation = \"~\/.PenTabletConfig\/com.ugee.PenTabletSettings.plist\"\n    },\n    hotkeys = {\n        current_window = {{\"shift\", \"alt\"}, \"w\"}\n    },\n    start = true,\n    repo = \"https:\/\/github.com\/dimaj\/XPPenTablet.spoon\"\n})\n```\nIf `XPPenTablet.configLocation` is not set, it will have a default value of `~\/.PenTabletConfig\/com.ugee.PenTabletSettings.plist`",
+    "name" : "XPPenTablet"
+  }
+]
