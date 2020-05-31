@@ -7,6 +7,13 @@ The purpose for this spoon is to modify monitor mapping settings to the XP-Pen t
 
 This is great when you want to scope your tablet's mapping to a single application window.
 
+Installation
+------------
+To install this spoon simply run the following command:
+```
+git clone https://github.com/dimaj/XPPenTablet.spoon ~/.hammerspoon/Spoons/XPPenTablet.spoon
+```
+
 Sample Configuration
 --------------------
 Add the following block to your hammerspoon configuration file:
@@ -19,8 +26,7 @@ spoon.SpoonInstall:andUse("XPPenTablet", {
     hotkeys = {
         current_window = {{"shift", "alt"}, "w"}
     },
-    start = true,
-    repo = "https://github.com/dimaj/XPPenTablet.spoon"
+    start = true
 })
 ```
 
